@@ -1,0 +1,295 @@
+html {
+  word-wrap: break-word;
+  font-family: Arial, Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: url(../img/background.png) 0 0 repeat;
+}
+
+.content {
+  width: 79%;
+  margin: 154px auto 50px;
+  padding: 20px;
+  position: relative;
+  border: 3px solid white;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-color: rgb(252, 252, 252);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.07), inset 0px 1px 2px 1px rgba(0, 0, 0, 0.09);
+}
+
+.main {
+  margin-right: 150px;
+  position: relative;
+}
+
+.main-left {
+  width: 50%;
+  float: left;
+}
+
+.main-left .wrap {
+  margin-right: 10px;
+}
+
+.main-left span {
+  display: block;
+  color: rgb( 51, 51, 51);
+  font-size: 18px;
+  text-align: justify;
+  margin: 0px 14px 0px 14px
+}
+
+.main-left span:before {
+  margin: 24px -14px 24px -14px;
+  content: "";
+  display: block;
+  height: 5px;
+  background-image: url('../img/border.png')
+}
+
+.main-left span:after {
+  content: "";
+  margin: 24px -14px 0px -14px;
+  display: block;
+  height: 5px;
+  background-image: url('../img/border.png')
+}
+
+input[type=button] {
+  vertical-align: top;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  color: rgb(241, 241, 241);
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  border: 2px solid rgb( 255, 255, 255);
+  border-radius: 20px;
+  background-image: -moz-linear-gradient( 90deg, rgb( 0, 117, 166) 0%, rgb( 86, 181, 255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb( 0, 117, 166) 0%, rgb( 86, 181, 255) 100%);
+  background-image: linear-gradient( 0deg, rgb( 0, 117, 166) 0%, rgb( 86, 181, 255) 100%);
+  box-shadow: 0px 3px 2px 0px rgba( 0, 0, 0, 0.18);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#56B5FF', endColorstr='#0176A7', GradientType=0);
+}
+
+.main-right {
+  position: relative;
+  width: 50%;
+  float: right;
+  margin-left: -10px;
+  min-height: 50px;
+}
+
+.main-right .wrap {
+  margin: 0px 15px 0px 10px;
+}
+
+.cloud {
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  width: 100%;
+  min-height: 80px;
+  box-shadow: 1px 1.732px 2px 0px rgba(0, 0, 0, 0.063);
+  padding: 5px;
+}
+
+.cloud-content {
+  min-height: 20px;
+  margin: 0 auto;
+  border: 1px dashed rgb(198, 213, 230);
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  text-align: center;
+}
+
+.cloud-content h3 {
+  margin: 19px 21px 15px 21px;
+  font-size: 24px;
+  font-weight: 500;
+  color: rgb(221, 86, 127);
+}
+
+.cloud-content span {
+  text-indent: 15px;
+  color: rgb(102, 102, 102);
+  font-size: 14px;
+  display: block;
+  margin: 15px 21px 28px 21px;
+}
+
+.main-right .wrap:after {
+  content: "";
+  display: block;
+  width: 38px;
+  height: 21px;
+  background-image: url(../img/cloud.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -20px;
+  right: 20px;
+}
+
+.icon-sprite:after {
+  content: "";
+  display: block;
+  height: 5px;
+  background-image: url('../img/border.png');
+  margin: 0px 10px 0px 50px;
+}
+
+.clearfix {
+  clear: both;
+  overflow: hidden;
+}
+
+.icon-sprite {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+}
+
+.icon-sprite ul:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.icon-sprite ul li {
+  float: left;
+  position: relative;
+  height: 25px;
+  list-style-type: none;
+}
+
+.icon-sprite .icon {
+  background: url(../img/icons.png) 0 0 no-repeat;
+  text-decoration: none;
+  margin: 0px 12.5px;
+}
+
+.heart .icon {
+  width: 30px;
+  height: 24px;
+  background-position: -28px -3px;
+}
+
+.clock .icon {
+  width: 25px;
+  height: 25px;
+  background-position: -1px -1px;
+}
+
+.arrow .icon {
+  width: 29px;
+  height: 26px;
+  background-position: -57px -3px;
+}
+
+.heart .stick {
+  background-color: rgb(255, 171, 214);
+  border: 2px solid white;
+}
+
+.clock .stick {
+  background-color: rgb(75, 173, 243);
+  border: 2px solid white;
+}
+
+.arrow .stick {
+  background-color: rgb(157, 175, 184);
+  border: 2px solid white;
+}
+
+.stick {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  width: 8px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  margin-left: -8px;
+  padding: 2px;
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.18);
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.18);
+}
+
+.stick .inside {
+  height: 100%;
+  width: 6px;
+  border-radius: 12px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  margin: 0 auto;
+}
+
+.heart .stick .inside {
+  background-color: rgb(255, 210, 233);
+}
+
+.clock .stick .inside {
+  background-color: rgb(158, 211, 249);
+}
+
+.arrow .stick .inside {
+  background-color: rgb(202, 212, 217);
+}
+
+.footer {
+  position: relative;
+  padding-top: 55px;
+}
+
+.footer:after {
+  content: "";
+  height: 40px;
+  width: 100%;
+  display: block;
+}
+
+.bar-code {
+  position: absolute;
+  top: 57px;
+  left: -2px;
+  background-image: url(../img/bar.png);
+  background-repeat: no-repeat;
+  background-position: 0px -18px;
+  width: 97px;
+  height: 67px;
+}
+
+.text-footer {
+  text-align: justify;
+  text-indent: 14px;
+  font-size: 12px;
+  color: rgb(102, 102, 102);
+  margin: 0px 120px 0px 105px;
+}
+
+.text-footer:after {
+  content: "";
+  margin: 30px 3px 0px 3px;
+  display: block;
+  height: 5px;
+  background-image: url('../img/border.png');
+}
+
+.qr-code {
+  position: absolute;
+  top: 57px;
+  right: 0;
+  background-image: url(../img/qr.png);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  width: 97px;
+  height: 97px;
+}
